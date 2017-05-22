@@ -1,9 +1,14 @@
+'''
+Bare-bones timing functions
+'''
+
 import time
 
 now = None
 def tick():
     global now
     now = time.clock()
+    
 def tock(*s):
     global now
     if s:
