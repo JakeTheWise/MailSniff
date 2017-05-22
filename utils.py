@@ -12,7 +12,7 @@ from ticktock import tick, tock
 
 def getBody(payload):
     '''Recursively hunts for and decodes the raw message body data.
-    Handles (imperfectly) the following MIME types that the Gmail API returns:
+    Handles the following MIME types that the Gmail API returns:
         text/plain, text/html, multipart/alternative, multipart/mixed 
     Returns English.'''
     mimeType = payload['mimeType']
